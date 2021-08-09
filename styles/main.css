@@ -7,6 +7,7 @@
 }
 
 body {
+  position: relative;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -54,11 +55,6 @@ body {
 .article-body-footer {
   position: relative;
   display: flex;
-}
-
-.article-body-footer-share span {
-  letter-spacing: 2.1px;
-  color: hsl(212, 23%, 69%);
 }
 
 .article-body-footer-img {
@@ -112,9 +108,12 @@ div.active {
   position: absolute;
   bottom: -10px;
 }
+
 .article-body-footer-share span {
   letter-spacing: 3.5px;
+  color: hsl(212, 23%, 69%);
 }
+
 .article-body-footer-share a {
   margin-left: 15px;
 }
@@ -133,8 +132,8 @@ div.active {
 }
 
 .attribution {
-  /* display: none; */
-  /*TODO despues*/
+  position: absolute;
+  bottom: 0;
 }
 
 /* Media Queries*/
@@ -178,6 +177,9 @@ div.active {
   }
   .article-body-footer-shareBtn {
     z-index: 2;
+  }
+  .attribution {
+    display: none;
   }
 }
 
